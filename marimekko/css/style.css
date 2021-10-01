@@ -76,7 +76,7 @@ header{
   text-indent: -9999px; overflow:hidden;
   background: url(../img/marimekko-logo.png) no-repeat left top;
   background-size: cover;
-  margin:50px auto;
+  margin:40px auto;
 }
 
 /* gnb_wrap */
@@ -105,7 +105,7 @@ header{
 .gnb>li>a:hover{
   color:#c93443;
 }
-.gnb>li:hover .sub{display: block;}
+/* .gnb>li:hover .sub{display: block;} */
 
 /* sub */
 .sub{
@@ -253,10 +253,12 @@ header{
 }
 .best_listWrap{
   display: flex;
-  justify-content: center;
+  width:200%; height: 400px;
+  justify-content: space-between;
   position:absolute;
   top:0; left:100%;
   transform: translate(-50%, 0);
+  top:0; left:0;
 }
 .sec2:hover .best_listWrap{
   animation:listMove 3s 1.5s forwards;
@@ -265,7 +267,10 @@ header{
   0%{left:100%;}
   100%{left:0;}
 }
-.best_listWrap li{margin: 0 20px;}
+.best_listWrap li{margin:0 1%;}
+/* .best_listWrap li:last-child,.best_listWrap li:nth-child(4){margin-right:0px;} */
+.best_listWrap li:nth-child(1),.best_listWrap li:nth-child(5){margin-left:2%;}
+.best_listWrap li:nth-child(4),.best_listWrap li:last-child{margin-right: 2%;}
 .best_listWrap li:hover p{color:#c93443;}
 .best_imgWrap{position: relative; height:400px; width:100%; overflow: hidden;}
 .best_imgWrap div{
@@ -278,8 +283,8 @@ header{
   background: url(../img/icon_move_left.png) no-repeat left top;
   background-size: cover;
   position:absolute;
-  top:50%; left:-5%;
-  transform: translate(-50%,-50%);
+  top:50%; left:0;
+  transform: translateY(-50%);
 }
 .next a{
   display: block;
@@ -287,8 +292,8 @@ header{
   background: url(../img/icon_move_black.png) no-repeat left top;
   background-size: cover;
   position:absolute;
-  top:50%; right:-5%;
-  transform: translate(50%,-50%);
+  top:50%; right:0;
+  transform: translateY(-50%);
 }
 .txt_box{padding:0 10px;}
 .item_img{
@@ -331,6 +336,8 @@ header{
   background: url(../img/bestProduct/best1-8.jpg) no-repeat left top;
   background-size: cover;
 }
+.best_listWrap li{width:22.5%;}
+.best_listWrap li div:first-child{width:100%;}
 
 /* sec3 */
 .new_items{margin-top:80px; position: relative;}
@@ -346,10 +353,12 @@ header{
 }
 .new_listWrap{
   display: flex;
-  justify-content: center;
+  width:200%; height: 400px;
+  justify-content: space-between;
   position:absolute;
   top:0; left:100%;
   transform: translate(-50%, 0);
+  top:0; left:0;
 }
 .sec3:hover .new_listWrap{
   animation:listMove 3s 1.5s forwards;
@@ -358,7 +367,11 @@ header{
   0%{left:100%;}
   100%{left:0;}
 }
-.new_listWrap li{margin: 0 20px;}
+/* .new_listWrap li{margin: 0 20px;} */
+.new_listWrap li{margin:0 1%;}
+/* .best_listWrap li:last-child,.best_listWrap li:nth-child(4){margin-right:0px;} */
+.new_listWrap li:nth-child(1),.new_listWrap li:nth-child(5){margin-left:2%;}
+.new_listWrap li:nth-child(4),.new_listWrap li:last-child{margin-right: 2%;}
 .new_listWrap li:hover p{color:#c93443;}
 .new_imgWrap{position: relative; height:400px; width:100%; overflow: hidden;}
 .new_imgWrap div{
@@ -406,6 +419,8 @@ header{
   background: url(../img/newArrival/new1-8.jpg) no-repeat left top;
   background-size: cover;
 }
+.new_listWrap li{width:22.5%;}
+.new_listWrap li div:first-child{width:100%;}
 
 /* sec4 */
 .bnr{
