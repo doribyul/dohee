@@ -7,27 +7,24 @@ body{
   margin:0;
   font-size:16px;
   line-height: 1.7;
-  background-color:#f3fbfd;
+  background-color:#f3fbfd; color:#333;
 }
 h1,h2,h3,h4,h5,h6{margin:0;}
 a{text-decoration:none;}
 
 h1{text-align:center;}
 figure{text-align:center; margin:0 0 20px 0;}
-ul{
-  list-style:none;
-  padding:0;
-  margin:0;
-  text-align: center;
-}
-li{
+.pfWrap{display: flex; flex-wrap:wrap; width:650px; margin:0 auto; margin-top:30px;}
+.pfWrap>h2{text-transform: uppercase; flex:100%; text-align: center; color:olivedrab; line-height: 1.3;}
+.pfWrap span{font-size:18px;}
+.pfWrap p{font-size:18px; font-weight: bold; margin-bottom:10px;}
+.mmWrap,.mdwrap{flex:1; text-align: center; margin-bottom: 30px;}
+.mmWrap a,.mdwrap a{
   display:inline-block;
   border:1px solid;
   color:olivedrab;
   width:300px;
   border:1px solid;
-  padding:5px 0 5px 0;
-}
-span{
-  color:olivedrab;
+  padding:10px 0;
+  margin:3px 0;
 }
